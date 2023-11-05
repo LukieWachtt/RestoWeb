@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Arial';
+}
+
+h4 {
+  color: #ffffff;
+}
+body {
+  background-color: #3d454e;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #313335;
+}
+.nav {
+  justify-content: space-between;
+  padding: 2em 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.logo span {
+  color: #ef242e;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 0, 0);
+  /* ini biar kalau dihover bisa berubah warnanya */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  width: 200px;
+  height: 31.256px;
+  font-family: Arial;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border: 0px;
+  border-radius: 16px;
+  background: #d9d9d9;
+  padding-left: 2rem;
+}
+
+.iconsearch {
+  position: absolute;
+  left: 5px;
+  width: 25px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.title {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 109%;
+}
+
+.millions {
+  color: #f52f39;
+  font-family: "Poppins";
+  font-size: 60px;
+  font-style: normal;
+  line-height: 90px;
+  letter-spacing: 12px;
+}
+
+.across {
+  color: #fff;
+  text-align: right;
+  font-family: Arial;
+  font-size: 33.51px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.main-container {
+  margin-top: 2rem;
+}
+
+.tigabox {
+  display: inline-flex;
+  gap: 58px;
+  margin-left: 600px;
+}
+
+.kotak {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align items sama justify content buat nengahin logonya */
+  width: 149px;
+  height: 100px;
+  border-radius: 12.653px;
+  background: #333b44;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.5);
+}
+
+.kotakicon {
+  position: absolute;
+  margin-bottom: 44.3px;
+}
+
+.kotak h4 {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+.kotak span {
+  color: #fa2d37;
+}
+
+.info-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+}
+
+.aboutresto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+}
+
+p {
+  color: #fff;
+  text-align: justify;
+  font-family: 'Arial';
+  font-style: bold;
+}
+
+.informasititle {
+  display: flex;
+  align-items: center;
+  /* align items ceenter biar yg 
+  rectangle merahnya bisa pas sama h3 */
+}
+
+.informasititle div::before {
+  margin-right: 8px;
+  display: block;
+  content: "";
+  width: 4.5px;
+  height: 28px;
+  border-radius: 2px;
+  background: red;
+}
+
+button{
+  width: 115px;
+  cursor: pointer;
+  height: 25px;
+  border-radius: 8px;
+  border: 0px solid;
+  background: #e73f47;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover{
+  background: #ca040e;
+}
+
+
+.makanan img{
+  width: 360px;
+  height: 360px;
+  border-radius: 12rem;
+}
+
+#about{
+  padding: 6rem 0;
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+}
+
+.about{
+  width: 500px;
+  font-size: 20px;
+}
+
+.about-title span{
+  color: #EB464E;
+}
+
+.about-title{
+ font-size: 50px;
+ color: white;
+}
+
+.footer-text-wrapper{
+  color: white;
+  margin-right: 100px;
+}
+
+.footer-text-wrapper span{
+  color: red;
+}
+
+footer{
+  background-color: black;
+  height: 100px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  
+}
+
+.essentials{
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.medias{
+  justify-self: flex-end;
+  padding-right: 3rem;
+}
+
+.docs{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 8px;
+}
+
+.pictures img{
+  width: 500px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.docs a:hover{
+  color: rgb(255, 0, 0);
+}
+
+.docs a{
+  transition: 0.2s ease-in-out;
+}
+
+.terms:visited{
+  color: rebeccapurple;
+}
+
+.policy:visited{
+  color: rebeccapurple;
+}
+
